@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyuLina - Promosi UMKM Lokal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+        }
+        /* Custom colors for the new section */
+        .bg-brand-secondary {
+            background-color: #FFFBF5; /* A light, warm background */
+        }
+        .text-brand-dark {
+            color: #2D3748; /* A dark text color */
+        }
+
+        .hero-bg {
+            /* Updated background image for the hero section with a herbal warm tone theme */
+            background-image: url('https://placehold.co/F5E6D3/333333'); /* Placeholder with herbal warm tone */
+            background-size: cover;
+            background-position: center;
+            border-radius: 1rem;
+            color: #333; /* Ensure text is visible */
+        }
+        .section-bg-light {
+            background-color: #FDF8F3;
+            border-radius: 1rem;
+        }
+        .btn-primary {
+            background-color: #D4A77D;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #C1946A;
+        }
+        .footer-bg {
+            background-color: #333;
+            color: white;
+            border-radius: 1rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+        /* Hover effect for product cards */
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-lift:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        }
+        /* Ensure table body text is black */
+        .table-content-black tbody {
+            color: #000; /* Set text color to black */
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md py-4 px-6 md:px-12 flex justify-between items-center rounded-b-xl">
+        <!-- Changed font size for "AyuLina" in header -->
+        <div class="text-xl md:text-2xl font-bold text-gray-800">AyuLina</div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#produk" class="text-gray-600 hover:text-gray-900">Produk</a></li>
+                <li><a href="#strategi" class="text-gray-600 hover:text-gray-900">Strategi</a></li>
+                <li><a href="#langkah" class="text-gray-600 hover:text-gray-900">Langkah Utama</a></li>
+                <li><a href="#platform" class="text-gray-600 hover:text-gray-900">Platform</a></li>
+                <li><a href="#konten" class="text-gray-600 hover:text-gray-900">Konten</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-center py-20 md:py-32 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl">
+        <!-- Changed font size for the main heading in hero section -->
+        <h1 class="text-xl md:text-2xl font-bold text-gray-900 leading-tight mb-4">
+            AyuLina: Solusi Herbal Alami untuk Kesehatan Optimal Anda!
+        </h1>
+        <p class="text-xl md:text-2xl text-gray-700 mb-8">
+            Temukan rahasia hidup sehat dengan minuman herbal tradisional Indonesia.
+        </p>
+        <!-- Updated the button to an anchor tag with the Instagram link -->
+        <a href="https://www.instagram.com/ayulina.hebal" target="_blank" class="btn-primary mt-10 inline-block">Jelajahi Produk Kami</a>
+    </section>
+
+    <!-- Product Section -->
+    <section id="produk" class="py-20 bg-brand-secondary mt-8 mx-4 md:mx-auto max-w-7xl rounded-xl">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-brand-dark">Tiga Varian yang Wajib Dicoba</h2>
+                <p class="text-gray-600 mt-2">Pilihan sempurna untuk setiap kebutuhan tubuhmu.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product Card 1: Golden Glow -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-lift">
+                    <img src="https://placehold.co/150x150/FBBF24/FFFFFF?text=Golden%0AGlow" alt="Gambar produk Golden Glow" class="mx-auto mb-6 h-32 w-32 object-cover rounded-full border-4 border-yellow-400">
+                    <h3 class="text-2xl font-bold text-yellow-600 mb-2">Golden Glow</h3>
+                    <p class="text-gray-600">Perpaduan <span class="font-semibold">kunyit</span> dan <span class="font-semibold">jeruk nipis</span> untuk mencerahkan harimu dan menjaga imunitas.</p>
+                </div>
+                <!-- Product Card 2: Red Boost -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-lift">
+                    <img src="https://placehold.co/150x150/DC2626/FFFFFF?text=Red%0ABoost" alt="Gambar produk Red Boost" class="mx-auto mb-6 h-32 w-32 object-cover rounded-full border-4 border-red-500">
+                    <h3 class="text-2xl font-bold text-red-600 mb-2">Red Boost</h3>
+                    <p class="text-gray-600">Kekuatan <span class="font-semibold">jahe merah</span> dan <span class="font-semibold">lemon</span> untuk meningkatkan energi dan vitalitas tubuh.</p>
+                </div>
+                <!-- Product Card 3: Detoxina -->
+                <div class="bg-white p-8 rounded-xl shadow-lg text-center hover-lift">
+                    <img src="https://placehold.co/150x150/FACC15/FFFFFF?text=Detoxina" alt="Gambar produk Detoxina" class="mx-auto mb-6 h-32 w-32 object-cover rounded-full border-4 border-yellow-500">
+                    <h3 class="text-2xl font-bold text-yellow-700 mb-2">Detoxina</h3>
+                    <p class="text-gray-600">Kombinasi <span class="font-semibold">temulawak</span> dan <span class="font-semibold">nanas</span> untuk membantu proses detoksifikasi alami tubuhmu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strategi Sederhana Promosi UMKM -->
+    <section id="strategi" class="section-bg-light py-16 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+            1. Strategi Sederhana Promosi Produk UMKM Lokal Melalui Media Sosial
+        </h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Tentukan Siapa Target Pasarnya (Persona Pelanggan)</h3>
+                <p class="text-gray-700">
+                    Misalnya: Remaja dan dewasa muda usia 18-35 tahun, tinggal di kota, peduli gaya hidup sehat. Ini cocok untuk produk seperti AyuLina (minuman herbal).
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Bangun Brand yang Konsisten Secara Visual dan Pesan</h3>
+                <p class="text-gray-700">
+                    Gunakan logo, warna, dan tone yang sama di setiap platform. Contoh: Warna earth tone dan desain clean untuk brand herbal.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Gunakan Konten Menarik dan Mudah Dimengerti</h3>
+                <p class="text-gray-700">
+                    Buat konten seperti video pendek, testimoni pelanggan, tips sehat, dan foto produk.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Manfaatkan Fitur Iklan Digital dengan Anggaran Kecil</h3>
+                <p class="text-gray-700">
+                    Contoh: Iklan Instagram/TikTok dengan target pengguna yang tertarik pada "gaya hidup sehat" di area Jabodetabek.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3 Langkah Utama -->
+    <section id="langkah" class="py-16 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+            2. Tuliskan 3 Langkah Utama Secara Singkat
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">1. Pahami Target Audiens Anda</h3>
+                <p class="text-gray-700">
+                    Sebelum memulai promosi, kenali siapa calon pembeli Anda. Ini mencakup memahami demografi, perilaku digital, serta minat dan kebutuhan mereka. Riset pasar membantu Anda memahami persona konsumen secara mendalam.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">2. Tentukan Tujuan Bisnis yang Spesifik (SMART Goals)</h3>
+                <p class="text-gray-700">
+                    Sesuaikan strategi promosi dengan tujuan yang jelas dan terukur, seperti meningkatkan brand awareness, mendapatkan leads (calon pelanggan), atau meningkatkan sales conversion.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">3. Pilih Platform Media Sosial yang Tepat & Buat Konten Relevan</h3>
+                <p class="text-gray-700">
+                    Setelah memahami audiens dan tujuan, pilih platform yang paling sesuai. Lalu, buat konten yang menarik dan sesuai dengan karakteristik platform tersebut.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Platform Media Sosial -->
+    <section id="platform" class="section-bg-light py-16 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+            3. Target Platform Media Sosial yang Dipilih
+        </h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Instagram</h3>
+                <p class="text-gray-700">
+                    Platform berbasis visual yang sangat kuat, cocok untuk branding dan e-commerce. Populer di kalangan usia 15-29 tahun. Cocok untuk mempromosikan produk visual seperti makanan/minuman/herbal.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">TikTok</h3>
+                <p class="text-gray-700">
+                    Memiliki algoritma yang mendukung viralitas dan engagement tinggi, mudah menarik audiens muda (usia 15-24 tahun). Sangat efektif untuk menjangkau Gen Z dan Millennial dengan video pendek.
+                </p>
+            </div>
+            <div class="card">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Facebook</h3>
+                <p class="text-gray-700">
+                    Platform raksasa dengan jangkauan luas dan grup komunitas yang kuat, cocok untuk iklan tertarget. Berguna untuk komunitas lokal dan promosi berbasis grup.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pendekatan Konten -->
+    <section id="konten" class="py-16 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
+            4. Pendekatan Konten yang Akan Digunakan
+        </h2>
+        <!-- Added a class to the table container for specific styling -->
+        <div class="overflow-x-auto table-content-black">
+            <table class="min-w-full bg-white rounded-lg shadow-md">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-700 uppercase text-sm leading-normal">
+                        <th class="py-3 px-6 text-left">Jenis Konten</th>
+                        <th class="py-3 px-6 text-left">Tujuan & Teori</th>
+                        <th class="py-3 px-6 text-left">Contoh Nyata</th>
+                    </tr>
+                </thead>
+                <!-- Removed the `text-gray-600` class from `tbody` directly -->
+                <tbody class="text-sm font-light">
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">Foto Produk Estetik</td>
+                        <td class="py-3 px-6 text-left">Branding Visual: Menampilkan produk secara konsisten agar mudah dikenali.</td>
+                        <td class="py-3 px-6 text-left">Foto 3 botol AyuLina dengan latar alami & warna soft.</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">Video Edukasi Pendek</td>
+                        <td class="py-3 px-6 text-left">Content Pillar: Educate: Memberikan informasi ringan tentang manfaat produk.</td>
+                        <td class="py-3 px-6 text-left">Reels "Manfaat kunyit untuk daya tahan tubuh" di IG/TikTok.</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">Testimoni Pelanggan</td>
+                        <td class="py-3 px-6 text-left">Social Proof: Orang lebih percaya review nyata dari pelanggan lain.</td>
+                        <td class="py-3 px-6 text-left">Video pelanggan yang merasa lebih fit setelah minum Detoxina.</td>
+                    </tr>
+                    <tr class="border-b border-gray-200 hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">Carousel / Slide Edukatif</td>
+                        <td class="py-3 px-6 text-left">Copywriting & Storytelling: Memberikan informasi ringkas dan jelas.</td>
+                        <td class="py-3 px-6 text-left">Postingan "5 Manfaat Temulawak" dengan ilustrasi singkat.</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="py-3 px-6 text-left whitespace-nowrap">Promo / Giveaway</td>
+                        <td class="py-3 px-6 text-left">Conversion Strategy: Menarik orang untuk mencoba produk dan membagikannya.</td>
+                        <td class="py-3 px-6 text-left">Post "Tag 3 teman untuk dapat bundling AyuLina gratis!".</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-bg py-8 px-6 md:px-12 mt-8 mx-4 md:mx-auto max-w-7xl text-center">
+        <p>&copy; 2025 AyuLina. Semua Hak Dilindungi.</p>
+        <p class="text-sm mt-2">Dibuat dengan semangat promosi UMKM lokal.</p>
+    </footer>
+
+</body>
+</html>
